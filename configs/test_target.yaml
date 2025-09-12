@@ -1,0 +1,24 @@
+#expected phase delay 0.67-0.7rad
+# Paths to input images
+input_images:
+  - "data/test_target/img1.tif"
+  - "data/test_target/img2.tif"
+
+# Two-element shifts for each image
+shears:
+  - [6.0, 1.0]
+  - [2.0,-7.0]
+
+# Algorithm parameters
+max_iter: 400
+
+# Regularization coefficients
+tv_coeff: 1e-8
+sign_reg_coeff: 1e-8
+
+# shift fine-tuning
+shear_lr: 1e-4  # set to 0 to skip fine-tuning
+
+# Optimizer settings
+opti_method: "Adam"
+learning_rate: 0.1

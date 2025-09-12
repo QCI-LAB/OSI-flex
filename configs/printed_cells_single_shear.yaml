@@ -1,0 +1,23 @@
+# Paths to input images
+input_images:
+  - "data/printed_cells/img1.tif"
+  #- "data/printed_cells/img2.tif"
+
+# Two-element shifts for each image
+shears:
+  - [-2.1, -2.0]
+  #- [-3.1, 1.0]
+
+# Algorithm parameters
+max_iter: 400
+
+# Regularization coefficients
+tv_coeff: 1e-8
+sign_reg_coeff: 2e-8
+
+# shift fine-tuning
+shear_lr: 0.0  # set to 0 to skip fine-tuning
+
+# Optimizer settings
+opti_method: "Adam"
+learning_rate: 0.1

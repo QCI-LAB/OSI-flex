@@ -1,0 +1,23 @@
+# Paths to input images
+input_images:
+  - "data/simulation/nonorthogonal_shears/img1.tif"
+  - "data/simulation/nonorthogonal_shears/img2.tif"
+
+# Two-element shifts for each image
+shears:
+  - [2.598, 1.5]
+  - [-1.39, 7.88]
+
+# Algorithm parameters
+max_iter: 400
+
+# Regularization coefficients
+tv_coeff: 2e-8
+sign_reg_coeff: 1e-8 # positive coeff -> nonnegativity constraint
+
+# shift fine-tuning
+shear_lr: 0  # set to 0 to skip fine-tuning
+
+# Optimizer settings
+opti_method: "Adam"
+learning_rate: 0.1

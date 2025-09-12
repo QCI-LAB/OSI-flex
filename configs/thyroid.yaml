@@ -1,0 +1,23 @@
+# Paths to input images
+input_images:
+  - "data/thyroid/img1.tif"
+  - "data/thyroid/img2.tif"
+
+# Two-element shifts for each image
+shears:
+  - [-3.5, -4.5]
+  - [-4.5, 2.0]
+
+# Algorithm parameters
+max_iter: 400
+
+# Regularization coefficients
+tv_coeff: 1e-8
+sign_reg_coeff: 1e-8
+
+# shift fine-tuning
+shear_lr: 1e-4  # set to 0 to skip fine-tuning
+
+# Optimizer settings
+opti_method: "Adam"
+learning_rate: 0.1

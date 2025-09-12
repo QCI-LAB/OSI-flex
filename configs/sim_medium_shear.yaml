@@ -1,0 +1,23 @@
+# Paths to input images
+input_images:
+  - "data/simulation/medium_shear/img1.tif"
+  - "data/simulation/medium_shear/img2.tif"
+
+# Two-element shifts for each image
+shears:
+  - [5.3, 0]
+  - [0, 5.3]
+
+# Algorithm parameters
+max_iter: 800
+
+# Regularization coefficients
+tv_coeff: 1e-8
+sign_reg_coeff: 1e-8 # positive coeff -> nonnegativity constraint
+
+# shift fine-tuning
+shear_lr: 0  # set to 0 to skip fine-tuning
+
+# Optimizer settings
+opti_method: "Adam"
+learning_rate: 0.1
