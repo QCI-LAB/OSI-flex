@@ -20,8 +20,16 @@
 - `configs/` — configuration files for running experiments  
 - `results/` — generated outputs and results (not tracked in Git)  
 
+
+## Data Availability
+
+The dataset required for running the code is available on Zenodo: [Dataset DOI link](https://doi.org/10.5281/zenodo.17119986).
+>**Note:** Please download the dataset from Zenodo before using this repository. 
+
 ## How to Run
 To run the program, execute the main script in the project root.
+>**Note:** All input data paths and processing parameters can be customized using the provided YAML configuration files.
+Simply edit the configuration file to specify the dataset location, reconstruction parameters, or other settings before running the script.
 
 ---
 
